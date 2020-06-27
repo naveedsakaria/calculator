@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Assignment Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  </head>
+</head>
+
+<body>
+    <div class="heading1">
+        <h1>Calculator</h1>
+    </div>
+    
+    <div class="main">
+            <div class="display">
+                <input id="result" type="text" placeholder="0"  />
+            </div>
+
+            <div class="buttons1">
+                <div class="row">
+                    <button class="btn bb halfbtn" onClick="clearResult()">C</button>
+                    <button class="btn" onClick="clearEntry()"><i class="fas fa-backspace"></i></button>
+                    <button class="btn" onClick="getNumber('/')">/</button>
+                </div>
+
+                <div class="row">
+                    <button class="btn" onClick="getNumber('7')">7</button>
+                    <button class="btn" onClick="getNumber('8')">8</button>
+                    <button class="btn" onClick="getNumber('9')">9</button>
+                    <button class="btn" onClick="getNumber('+')">+</button>
+                    
+                </div>
+
+                <div class="row">
+                    <button class="btn" onClick="getNumber('4')">4</button>
+                    <button class="btn" onClick="getNumber('5')">5</button>
+                    <button class="btn" onClick="getNumber('6')">6</button>
+                    <button class="btn" onClick="getNumber('-')">-</button>
+                </div>
+
+                <div class="row">
+                    <button class="btn" onClick="getNumber('1')">1</button>
+                    <button class="btn" onClick="getNumber('2')">2</button>
+                    <button class="btn" onClick="getNumber('3')">3</button>
+                    <button class="btn" onClick="getNumber('*')">x</button>
+                </div>
+
+                <div class="row">
+                    <button class="btn" onClick="getNumber('0')">0</button>
+                    <button class="btn" onClick="getNumber('.')">.</button>
+                    <button class="btn red halfbtn" onClick="getResult()">=</button>
+                </div>
+            </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
